@@ -1,0 +1,54 @@
+{
+  "name": "gpa-calculator",
+  "productName": "GPA Calculator",
+  "version": "1.0.0",
+  "description": "Calculate your GPA with ease using this Electron application",
+  "main": "src/index.js",
+  "homepage": "https://your-app-homepage.com",
+  "scripts": {
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make",
+    "publish": "electron-forge publish",
+    "lint": "echo \"No linting configured\"",
+    "dist": "electron-builder",
+    "build": "electron-builder"
+  },
+  "keywords": ["GPA", "calculator", "Electron"],
+  "author": {
+    "name": "Praveen",
+    "email": "your.email@example.com"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "electron-squirrel-startup": "^1.0.0"
+  },
+  "devDependencies": {
+    "@electron-forge/cli": "^7.2.0",
+    "@electron-forge/maker-deb": "^7.2.0",
+    "@electron-forge/maker-rpm": "^7.2.0",
+    "@electron-forge/maker-squirrel": "^7.2.0",
+    "@electron-forge/maker-zip": "^7.2.0",
+    "@electron-forge/plugin-auto-unpack-natives": "^7.2.0",
+    "electron": "28.0.0",
+    "electron-builder": "^24.9.1"
+  },
+  "build": {
+    "appId": "com.example.gpa-calculator",
+    "win": {
+      "icon": "performance.png"
+    },
+    "productName": "GPA Calculator",
+    "directories": {
+      "output": "dist"
+    },
+    "linux": {
+      "target": [
+        "snap",
+        "AppImage",
+        "deb",
+        "rpm"
+      ]
+    }
+  }
+}
