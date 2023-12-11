@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=gpa-calculator
+Exec=/home/praveen/Desktop/Electron-apps/GPA-App/GPA-Calculator/dist/linux-unpacked/gpa-calculator
+Icon=performance.png
+Type=Application
+Categories=Utility;

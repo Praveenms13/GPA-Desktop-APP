@@ -1,0 +1,29 @@
+
+#!/bin/bash
+
+# Display welcome message
+echo "Welcome to Your App Setup Script!"
+echo "Running the script as root !!"
+echo "---------------------------------"
+echo "Visit my portfolio: https://www.praveenms.site/"
+echo "Current app Git link: https://github.com/Praveenms13/GPA-Desktop-APP"
+echo "---------------------------------"
+echo "Setting up the desktop icon for your app..."
+
+echo "[Desktop Entry]
+Name=gpa-calculator
+Exec=$(pwd)/app-data/gpa-calculator
+Icon=$(pwd)/app-data/performance.png
+Type=Application
+Categories=Utility;
+" > gpa-calculator.desktop
+
+sudo mv gpa-calculator.desktop /usr/share/applications/
+
+sudo chmod +x /usr/share/applications/gpa-calculator.desktop 
+
+echo "Running the actual startup script..."
+
+echo "Desktop icon setup completed. Enjoy using Your App!"
+
+./app-data/gpa-calculator
