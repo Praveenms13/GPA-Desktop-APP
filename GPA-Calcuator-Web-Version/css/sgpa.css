@@ -1,0 +1,104 @@
+body {
+  font-family: "Jost", sans-serif;
+}
+
+h1 {
+  font-weight: 800;
+  text-align: center;
+  position: relative;
+  top: 45px;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #fff;
+}
+
+.flex {
+  display: flex;
+  position: relative;
+  top: -30px;
+}
+
+.twobutton {
+  position: relative;
+  top: -10px;
+}
+
+.bar {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 10px;
+  position: relative;
+  top: -20px;
+}
+
+#result {
+  margin: 10px 20px;
+  padding: 10px 30px;
+}
+
+.submitbutton {
+  margin: -20px;
+}
+
+.cgparesult {
+  font-weight: 800;
+  padding-top: 10px;
+  font-weight: 900;
+  color: #000;
+  font-size: 30px;
+  margin-top: -10px;
+}
+
+#eleven {
+  background: none;
+  outline: none;
+  border: none;
+  width: 100px;
+  margin-top: -10px;
+  color: #ff0000;
+  font-weight: 900;
+  font-size: 30px;
+}
+
+input {
+  font-weight: 900;
+}
+
+.headtab {
+  font-size: 18px;
+}
+
+.progress {
+  height: 20px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+img {
+  width: 100%;
+  height: 1000px;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.containerinner {
+  position: relative;
+  top: 45px;
+}
+@media screen and (max-width: 550px){
+  #resets{
+    margin-top: 10px;
+  }
+}
