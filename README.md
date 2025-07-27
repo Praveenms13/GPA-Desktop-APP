@@ -21,4 +21,4 @@ This GPA calculator is intended for educational purposes only. While efforts hav
 
 ## Screenshots
 
-![App Screenshot](images/gpa.png)
+![App Screenshot](GPA-Calcuator-Web-Version/images/gpa.png)
